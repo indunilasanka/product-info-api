@@ -7,7 +7,7 @@
 3. Open terminal and run "npm install"
 4. Run "npm start"
 5. Then server will be up and run in port specified by you
-6. Import the postman collection in "product-info.postman_collection.json". Use the postman calls in "rest" folder. First create some brand names using "brand create" postman call
+6. Import the postman collection in "product-info.postman_collection.json". Use the postman calls in "rest" folder. 
 
 ## Assumptions/Decisions
 1. 2 mysql tables. product and brand connected through a foreign key.
