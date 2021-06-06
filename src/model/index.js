@@ -1,6 +1,6 @@
 import DataTypes from 'sequelize';
 import logger from '../util/logger';
-import DbManager from '../resources/dbManager';
+import DbManager from '../resource/dbManager';
 
 const models = {};
 const modelFiles = ['product', 'brand'];

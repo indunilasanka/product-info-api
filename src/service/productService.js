@@ -14,7 +14,6 @@ class ProductService {
 
   static async getProductById(productId) {
     let product = await productDao.getProductById(productId);
-
     if (!product) {
       product = await productDao.getProductBySlug(productId);
     }

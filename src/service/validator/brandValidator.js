@@ -1,7 +1,7 @@
 import Ajv from 'ajv';
 import InvalidRequestException from '../../exception/InvalidRequestException';
 import brandDao from '../../dao/brandDao';
-import {BRAND_NAME_EXIST, BRAND_NAME_EXIST_CODE, VALIDATION_ERRORS_CODE} from '../../util/constant';
+import { BRAND_NAME_EXIST, BRAND_NAME_EXIST_CODE, VALIDATION_ERRORS_CODE } from '../../util/constant';
 
 const ajv = new Ajv({ coerceTypes: true, format: 'full' });
 

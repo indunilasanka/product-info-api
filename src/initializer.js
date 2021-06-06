@@ -1,5 +1,5 @@
 import logger from './util/logger';
-import DbManager from './resources/dbManager';
+import DbManager from './resource/dbManager';
 import { modelInitializer } from './model/index';
 
 export default async function initializer(app) {

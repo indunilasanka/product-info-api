@@ -2,7 +2,7 @@ import brandDao from '../dao/brandDao';
 import { validateBrandCreateRequest } from './validator/brandValidator';
 import logger from '../util/logger';
 import InvalidRequestException from '../exception/InvalidRequestException';
-import {BRAND_NAME_NOT_AVAILABLE, BRAND_NAME_NOT_AVAILABLE_CODE} from '../util/constant';
+import { BRAND_NAME_NOT_AVAILABLE, BRAND_NAME_NOT_AVAILABLE_CODE } from '../util/constant';
 
 class BrandService {
   static async getAllBrands() {

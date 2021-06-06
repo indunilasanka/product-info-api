@@ -9,7 +9,7 @@
 5. Then server will be up and run in port specified by you
 6. Import the postman collection in "product-info.postman_collection.json". Use the postman calls in "rest" folder. 
 
-## Assumptions/Decisions
+### Assumptions/Decisions
 1. 2 mysql tables. product and brand connected through a foreign key.
 2. product slug is considered as a unique parameter(2 products cant share the same slug name).
 3. product sku can be empty or null, but none of the other fields can be null.
