@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "8ac35e79-4857-4af1-a779-bd8d5cf0a3c8",
+		"name": "product-info",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rest",
+			"item": [
+				{
+					"name": "product create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productName\": \"Noodle\",\n    \"productSlug\": \"slug3\",\n    \"sku\": \"918390ccccc\",\n    \"brandId\": 2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "brand create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"brandName\": \"KFC\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "brand get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "brand get by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/brands/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"brands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product get by id/slug",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Anchor\",\r\n    \"productSlug\": \"slug2\",\r\n    \"sku\": \"918390aaaaa\",\r\n    \"brandId\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8060/v1/product-info/products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8060",
+							"path": [
+								"v1",
+								"product-info",
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "graphql",
+			"item": [
+				{
+					"name": "graphql: product get all",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  products {\r\n    productId\r\n    productName\r\n    productSlug\r\n    sku\r\n    brand {\r\n      brandId\r\n      brandName\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "graphql: product create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "correlation-id",
+								"value": "abcdpqrs1234",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation(\r\n  $productName: String!\r\n  $productSlug: String!\r\n  $sku: String\r\n  $brandId: Int!\r\n) {\r\n  createProduct(\r\n    productName: $productName\r\n    productSlug: $productSlug\r\n    sku: $sku\r\n    brandId: $brandId\r\n  ) {\r\n    productId\r\n    productName\r\n    productSlug\r\n    sku\r\n    brand {\r\n      brandId\r\n      brandName\r\n    }\r\n  }\r\n}",
+								"variables": "{\"productName\": \"product6\",\"productSlug\": \"slug6\", \"sku\": \"aabbsgg22\", \"brandId\": 2}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
