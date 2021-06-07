@@ -1,6 +1,3 @@
-/* eslint-disable func-names */
-
-/* eslint-disable no-magic-numbers */
 export default function (sequelize, DataTypes) {
   const attributes = {
     brandId: {
